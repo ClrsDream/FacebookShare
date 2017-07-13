@@ -1,0 +1,10 @@
+/out:"F:\Project\FacebookHelper\FacebookHelper\obj\x86\Release\ilc\intermediate\SgGenerated\\"
+/int:"F:\Project\FacebookHelper\FacebookHelper\obj\x86\Release\ilc\intermediate\\"
+/ref:"F:\Project\FacebookHelper\FacebookHelper\obj\x86\Release\ilc\intermediate\PreMergeILTransformed\\"
+/ref:"F:\Project\FacebookHelper\FacebookHelper\obj\x86\Release\ilc\intermediate\TransformedSRWR\\"
+/ref:"F:\Project\FacebookHelper\FacebookHelper\obj\x86\Release\ilc\in\\"
+/ref:"F:\Project\FacebookHelper\FacebookHelper\obj\x86\Release\ilc\in\\"
+/ref:"F:\Project\FacebookHelper\FacebookHelper\obj\x86\Release\ilc\in\\"
+/ref:"C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\x86\ilc\lib\Private\\"
+/ref:"F:\Project\FacebookHelper\FacebookHelper\obj\x86\Release\ilc\in\WinMetadata\\"
+/ca:System.Private.CoreLib

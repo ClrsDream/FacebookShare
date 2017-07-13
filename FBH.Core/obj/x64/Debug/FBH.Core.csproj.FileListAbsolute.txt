@@ -1,0 +1,17 @@
+F:\Project\FacebookHelper\FBH.Core\bin\x64\Debug\FBH.Core.dll
+F:\Project\FacebookHelper\FBH.Core\bin\x64\Debug\FBH.Core.pdb
+F:\Project\FacebookHelper\FBH.Core\bin\x64\Debug\FBH.Core.pri
+F:\Project\FacebookHelper\FBH.Core\obj\x64\Debug\FBH.Core.csprojResolveAssemblyReference.cache
+F:\Project\FacebookHelper\FBH.Core\obj\x64\Debug\FBH.Core.dll
+F:\Project\FacebookHelper\FBH.Core\obj\x64\Debug\FBH.Core.pdb
+F:\Project\FacebookHelper\FBH.Core\obj\x64\Debug\priconfig.xml
+F:\Project\FacebookHelper\FBH.Core\obj\x64\Debug\priconfig.xml.intermediate
+F:\Project\FacebookHelper\FBH.Core\obj\x64\Debug\layout.resfiles
+F:\Project\FacebookHelper\FBH.Core\obj\x64\Debug\layout.resfiles.intermediate
+F:\Project\FacebookHelper\FBH.Core\obj\x64\Debug\resources.resfiles
+F:\Project\FacebookHelper\FBH.Core\obj\x64\Debug\resources.resfiles.intermediate
+F:\Project\FacebookHelper\FBH.Core\obj\x64\Debug\pri.resfiles
+F:\Project\FacebookHelper\FBH.Core\obj\x64\Debug\pri.resfiles.intermediate
+F:\Project\FacebookHelper\FBH.Core\obj\x64\Debug\qualifiers.txt
+F:\Project\FacebookHelper\FBH.Core\obj\x64\Debug\qualifiers.txt.intermediate
+F:\Project\FacebookHelper\FBH.Core\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt

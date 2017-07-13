@@ -1,0 +1,2 @@
+C:\Projects\FacebookHelperV1.1\FacebookHelper\FacebookHelper.csproj;x86
+C:\Projects\FacebookHelperV1.1\FBH.Core\FBH.Core.csproj;x86

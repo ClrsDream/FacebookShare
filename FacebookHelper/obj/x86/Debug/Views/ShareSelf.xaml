@@ -1,0 +1,75 @@
+﻿<Page
+    x:Class="FacebookHelper.Views.ShareSelf"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FacebookHelper.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:code="using:FacebookHelper.Codes"
+    xmlns:vm="using:FacebookHelper.ViesModels" 
+    xmlns:Interactivity="using:Microsoft.Xaml.Interactivity" 
+    xmlns:Core="using:Microsoft.Xaml.Interactions.Core"   
+    mc:Ignorable="d" >
+
+    <Page.DataContext>
+        <vm:ShareSelfViewModel/>
+    </Page.DataContext>
+    
+    <Interactivity:Interaction.Behaviors>
+        <Core:EventTriggerBehavior EventName="Loaded">
+            <Core:InvokeCommandAction Command="{Binding LoadedCmd}"/>
+        </Core:EventTriggerBehavior>
+    </Interactivity:Interaction.Behaviors>
+    
+    <Page.Resources>
+        <DataTemplate x:Key="ItemTemp"                              >
+            <Grid Width="350" d:DesignHeight="130" BorderBrush="#FFC7C4C4" BorderThickness="1" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="9*"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image x:Name="image" Stretch="UniformToFill" Height="100" Width="100" Source="{Binding Path=ProductImg}"/>
+                <TextBlock x:Name="textBlock" Grid.Column="1" Margin="0" VerticalAlignment="Bottom" TextWrapping="Wrap" Text="{Binding Path=ProductName}"/>
+                <ProgressBar Grid.ColumnSpan="2" VerticalAlignment="Stretch" Grid.Row="1" Margin="0" Background="#00000000" Value="{Binding Path=ProValue,Mode=TwoWay}"/>
+            </Grid>
+        </DataTemplate>
+
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <GridView x:ConnectionId='1' x:Name="prouctsView" Margin="10,10,0,0" ItemsSource="{Binding ProductEntities,Mode=TwoWay}" Grid.Row="1" ItemTemplate="{StaticResource ItemTemp}" />
+
+        <CommandBar>
+            <!--<AppBarButton Icon="Setting" Label="Setting" Command="{Binding Cmd, Mode=OneWay}" />-->
+            <AppBarButton Icon="Play" Label="Post" Command="{Binding PostShare}"/>
+            <CommandBar.Content>
+                <TextBlock Text="Share Your Timeline." Margin="12,14"></TextBlock>
+            </CommandBar.Content>
+        </CommandBar>
+        <!--<SplitView FlowDirection="RightToLeft" Margin="0,0,0,0" Grid.Row="1" IsPaneOpen="{Binding IsSettingOpen}" Opacity="0.8">
+            <SplitView.Pane>
+                <StackPanel>
+                    <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Shop Name:" FontSize="20" Margin="0,10,5,10" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txt_Shopurl" TextWrapping="Wrap" Text="{Binding ShopUrl,Mode=TwoWay}" FontSize="20" VerticalAlignment="Center" Width="300"/>
+                    <Button x:Name="btn_Submit" Content="Submit" HorizontalAlignment="Right" Margin="5,10,10,0" VerticalAlignment="Center" Width="100" Background="#FF007ACC" Command="{Binding Submit, Mode=OneWay}"/>
+                </StackPanel>
+            </SplitView.Pane>
+        </SplitView>-->
+
+        <Popup IsOpen="{Binding IsPopOpen,Mode=TwoWay}" VerticalAlignment="Top" HorizontalAlignment="Center" Height="60" Width="300">
+            <Border BorderBrush="#FFE7E8EC" BorderThickness="1,0,1,1" Background="White" CornerRadius="2" Width="300" Height="60">
+                <TextBlock TextWrapping="NoWrap"  Foreground="#FFFB0606" Text="{Binding TipMsg}" Width="auto" Margin="5" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </Border>
+        </Popup>
+    </Grid>
+</Page>
+
